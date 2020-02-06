@@ -27,7 +27,7 @@ for sh in xlrd.open_workbook(myPath).sheets():
         for col in range(sh.ncols):
             myCell = sh.cell(row, col)
             print(myCell)
-            if myCell.value == 300.0:
+            if myCell.value == "test":
                 print('-----------')
                 print('Found!')
                 print(xl_rowcol_to_cell(row,col))
